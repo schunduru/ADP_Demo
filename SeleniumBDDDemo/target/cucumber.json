@@ -1,0 +1,124 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-05-31T02:51:19.451Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4025000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.app.demo.stepdef.Hook.InitializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Register into website as a new user",
+        "description": "",
+        "id": "create-account-and-login;register-into-website-as-a-new-user",
+        "after": [
+          {
+            "result": {
+              "duration": 957000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.app.demo.stepdef.Hook.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4492000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.app.demo.stepdef.LoginStepDef.i_am_to_the_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2316000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I click on \u0027create account\u0027 link",
+            "match": {
+              "location": "com.app.demo.stepdef.LoginStepDef.i_click_on_create_account_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5759000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I create a new profile without accepting captcha challenge",
+            "match": {
+              "location": "com.app.demo.stepdef.CreateAccountStepDef.i_create_a_new_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2255000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I am on the login page",
+            "match": {
+              "location": "com.app.demo.stepdef.LoginStepDef.i_am_to_the_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3839000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I login with new user details",
+            "match": {
+              "location": "com.app.demo.stepdef.LoginStepDef.i_login_with_new_user_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30068000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I see user unable to login with error message \"Incorrect email or password.\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Incorrect email or password.\"",
+                  "offset": 46
+                }
+              ],
+              "location": "com.app.demo.stepdef.LoginStepDef.i_see_user_unable_to_login_with_error_message(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Create account and Login",
+    "description": "",
+    "id": "create-account-and-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CreateAccountAndLogin.feature",
+    "tags": []
+  }
+]
